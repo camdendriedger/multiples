@@ -100,6 +100,46 @@ grid-container {
   line-height: 0;
 }
 
+.button {
+  padding: 7px;
+  background-color: #63AAD6;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+a.button-link:hover div.button {
+  color: #63AAD6;
+  border: 2px solid #63AAD6;
+  background-color: rgba(99,170,214, .1);
+
+  padding: 5px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+}
+
+
+.button:hover {
+  color: #63AAD6;
+  border: 2px solid #63AAD6;
+  background-color: rgba(99,170,214, .1);
+
+  padding: 6px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+}
+
+
+
 grid-container {
   -ms-transform: scale(.7);
     -webkit-transform: scale(.7);

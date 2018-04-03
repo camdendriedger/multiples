@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Multiples - Process</title>
+	<meta charset="UTF-8">
+	<link href="css/process.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Teko:300,400,500,600,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+
+
+
+<div class="header" id="header">
+	<div class="header-title">
+		<p>
+			Process Work
+		</p>
+	</div>
+
+	<div id="header-subtitle">
+
+
+	<div class="header-subtitle">
+		Camden Driedger - Multiples
+	</div>
+
+	<div class="header-subtitle">
+		YSDN 2013
+	</div>
+</div>
+
+</div>
+
+
+<div class="content">
+
+
+
+<div class="proposal">
+
+	<div class="title">
+		<p class="title-text">
+			Proposal
+		</p>
+	</div>
+
+	<div class="proposal-content">
+	<p class="content-paragraph">
+		 My Project will be in the format of an interactive webpage and will follow the theme of illusion.
+	</p>
+	<p class="content-paragraph">
+	</p>
+	<p class="content-paragraph">
+		  The  webpage will consist of a grid of 9 circles, each by defualt containing a visual composition of solid lines and shapes (the plan is to stick with compositions of solid lines and shapes but this may change depending on how the animation process goes).
+	</p>
+	<p class="content-paragraph">
+	</p>
+	<p class="content-paragraph">
+		When a circle is hovered over, the pattern or composition will become animated and will display some sort of illusion as it is animated. This will be done using either an animated video (created in after effects) or through CSS and Javascript, or even a mix of the two, depending on the indivividual situation.
+	</p>
+
+
+	<p class="content-paragraph">
+	</p>
+	<p class="content-subtitle">
+		Example:
+	</p>
+
+	<div class="example-container">
+
+
+		<div class="example-left">
+
+
+		<div class="example-diagram">
+
+		<div class="image-container">
+			<img class="diagram-image" src="img/proposal/1.svg" />
+		</div>
+
+		<div class="diagram-description">
+			<p class="diagram-description-text">
+				Deafult
+			</p>
+		</div>
+
+	</div>
+
+	<div class="example-diagram">
+
+		<div class="image-container">
+			<img class="diagram-image" src="img/proposal/2.svg" />
+		</div>
+
+		<div class="diagram-description">
+			<p class="diagram-description-text">
+				On Hover
+			</p>
+		</div>
+
+	</div>
+
+</div>
+
+	<div class="example-right">
+	<div class="example-right-text-container">
+		<p class="example-right-text">
+		In this example, the circle pattern, when hovered over, becomes animated and the pieces begin rotating to create an illusion.
+		</p>
+	</div>
+
+	<div class="right-fill">
+
+	</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="process">
+	<div class="title">
+		<p class="title-text">
+			Process
+		</p>
+	</div>
+
+<div class="process-content">
+	<p class="content-paragraph">
+		Unfortunately, there is very little work to display as process work other than the work published in the final piece. The work put into each individual circle and its animation adds up to many hours, and so it would be unrealistic to devote that much time into creating more circles that would not be used in the final website.
+	</p>
+	<p class="content-paragraph">
+	</p>
+	<p class="content-paragraph">
+	In the majority of the circles, the svgs are coded by hand. This is what consumed the majority of my time, but it is also what allowed to me to morph them in transition for a much better hover transition as you see in the Multiples website.
+	</p>
+	<p class="content-paragraph">
+	</p>
+	<p class="content-paragraph">
+	The files for the project which contain my mess of code can be found <a class="files-link" href="github.com/camdendriedger/multiples">here</a>.
+	</p>
+</div>
+
+
+</div>
+
+
+<div class="button-container">
+<a href="index.html" class="button">
+Return To Multiples Website</a>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+$(window).on('scroll', function () {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 50) {
+        $('#header').stop().animate({height: "100px"},200);
+
+				document.getElementById( 'header-subtitle' ).style.display = 'none';
+    }
+    else {
+         $('#header').stop().animate({height: "200px"},200);
+
+				 document.getElementById( 'header-subtitle' ).style.display = 'flex';
+    }
+
+
+
+});
+
+</script>
+
+
+</body>
+
+
+
+
+
+</html>
