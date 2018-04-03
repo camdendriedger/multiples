@@ -144,23 +144,204 @@
 	</div>
 
 <div class="process-content">
+	<!--
 	<p class="content-paragraph">
 		Unfortunately, there is very little work to display as process work other than the work published in the final piece. The work put into each individual circle and its animation adds up to many hours, and so it would be unrealistic to devote that much time into creating more circles that would not be used in the final website.
 	</p>
 	<p class="content-paragraph">
 	</p>
+-->
 	<p class="content-paragraph">
 	In the majority of the circles, the svgs are coded by hand. This is what consumed the majority of my time, but it is also what allowed to me to morph them in transition for a much better hover transition as you see in the Multiples website.
 	</p>
+	<p class="content-paragraph"></p>
 	<p class="content-paragraph">
+	While each circle had a unique process and each had its own frustrations, glitches, and "why isn't this working moments", the general prcess of defining svg points in html and manpulating them in css on hover remains the same. To demonstrate this process, one circle in particular will be used.
 	</p>
+
+	<div class="process-list">
+
+
+		<div class="process-list-item">
+			<div class="process-list-item-image-container">
+				<img src="img/process/1.svg" />
+			</div>
+			<div class="process-list-item-text-container">
+				<p class="content-paragraph">
+					To begin, a single square was created in svg code. This square consists of four points, or pairs of x and y values, which not only determine its size but also its position. For example, (1,1) , (3,1) , (3,3) , (1,3). These coordinates were set in HTML.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="process-list-item">
+			<div class="process-list-item-image-container">
+				<img src="img/process/2.svg" />
+			</div>
+			<div class="process-list-item-text-container">
+				<p class="content-paragraph">
+					The single square was duplicated, and the points were all translated so that this new square was positioned beside the original, and then repeated. Each square was given its own id so that the points of their coordinate could be changed in CSS on an individual basis when the parent circle is in a hover state.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="process-list-item">
+			<div class="process-list-item-image-container">
+				<img src="img/process/3.svg" />
+			</div>
+			<div class="process-list-item-text-container">
+				<p class="content-paragraph">
+					Now back to the individual square. By default, the value of its coordinates are determined by what is set out in the html. The coordinates of the first square that I created had coordinates d="M4.5,4 4.5,6 2.5,6 2.5,4". In order for any SVG to morph into a different shape on hover, there must be the same number of coordinates (in this case there are four) and the element must be given a transition.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="process-list-item">
+			<div class="process-list-item-image-container">
+				<img src="img/process/4.svg" />
+			</div>
+			<div class="process-list-item-text-container">
+				<p class="content-paragraph">
+					When the parent circle is in hover state, the CSS at that point dictates what the coordinates of that square will be. The work around to having the same number of coordinates (4) while making it a triangle was to make two coordinates the same value. The new coordinates for what was once a square is d: path("M5,4 4,6 4,6 3,4"); (as written in CSS).
+				</p>
+			</div>
+		</div>
+
+
+		<div class="process-list-item">
+			<div class="process-list-item-image-container">
+				<img src="img/process/5.svg" />
+			</div>
+			<div class="process-list-item-text-container">
+				<p class="content-paragraph">
+					Each square has a unique set of coordinates in the svg code which is embedded in the HTML. When the parent circle is in hover, each square's coordinates change on a case by case basis. To make the pattern consistent, everything was transformed by the same amount.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="process-list-item-1">
+
+			<div class="process-list-item-text-container-1">
+				<p class="content-paragraph">
+					Here are some snippets of code that contain the coordinates of the SVGs used in the green square-triangle circle, HTML on the left and CSS on the right.
+				</p>
+			</div>
+
+
+			<div class="process-list-item-1-images">
+
+			<div class="process-list-item-image-container-1">
+				<img class="process-list-item-image-1" src="img/process/6.png" />
+			</div>
+
+			<div class="process-list-item-image-container-2">
+				<img class="process-list-item-image-1" src="img/process/7.png" />
+			</div>
+
+		</div>
+
+		</div>
+
+
+		<div class="process-list-item">
+			<div class="process-list-item-image-container">
+				<img src="img/process/8.svg" />
+			</div>
+			<div class="process-list-item-text-container">
+				<p class="content-paragraph">
+					In the case of the multicolour cube, the process was more simple. It consisted of only three SVG components; a square and two polygons.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="process-list-item">
+			<div class="process-list-item-image-container">
+				<img src="img/process/9.svg" />
+			</div>
+			<div class="process-list-item-text-container">
+				<p class="content-paragraph">
+					When the parent circle is in hover state, the coordinates simply translate and do not change shape or size. The method of transforming the coordinates is the same as the previous circle, but the transformations that take place are differnt and much less complex.
+				</p>
+			</div>
+		</div>
+
+
+	</div>
+
 	<p class="content-paragraph">
 	The files for the project which contain my mess of code can be found <a class="files-link" href="https://github.com/camdendriedger/multiples">here</a>.
 	</p>
+
+	<p class="content-paragraph">
+	Organization and consistent classing and tagging methods were incredibly important, because there are hundreds of SVGs and paths in the HTML. Generally, an element that would be animated was labelled as by firstly the element type, then which parent circle it belonged to, and then was given a number to differentiate it from its sibling elements.
+	</p>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="Inspiration">
+
+
+
+	<div class="title">
+		<p class="title-text">
+			Inspiration
+		</p>
+	</div>
+
+<div class="video-container">
+
+
+
+	<iframe id="video" src="https://player.vimeo.com/video/141891887?autoplay=1&loop=1"></iframe>
+
+	<div class="video-source">
+	<a href="https://www.fastcodesign.com/3052306/vintage-book-covers-beautifully-animated" id="video-source-link" class="content-paragraph">Video Source</a>
+</div>
+
+</div>
+
+
+<div class="inspiration-image-container">
+
+	<div class="inspiration-image-overlay">
+		<a href="https://necromanc.blogspot.ca/2006/02/real-time-3d-illusion.html" class="inspiration-image-overlay">Image Source</a>
+	</div>
+
+	<img src="https://photos1.blogger.com/blogger/1856/2130/320/necro2.0.jpg" class="inspiration-image"
+</div>
+
+
+<div class="inspiration-image-container-2">
+
+	<div class="inspiration-image-overlay-2">
+		<a href="https://appleinsider.com/articles/10/05/09/first_look_valves_steam_team_fortress_2_and_portal_for_mac" class="inspiration-image-overlay-2">Image Source (for Portal inspired animation)</a>
+	</div>
+
+	<img src="https://photos2.insidercdn.com/steam-100509-6.jpg" class="inspiration-image-2"
 </div>
 
 
 </div>
+
+
+
+
 
 
 <div class="button-container">
@@ -184,7 +365,7 @@ Return To Multiples Website</a>
 
 $(window).on('scroll', function () {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop > 50) {
+    if (scrollTop > 5) {
         $('#header').stop().animate({height: "100px"},200);
 
 				document.getElementById( 'header-subtitle' ).style.display = 'none';
